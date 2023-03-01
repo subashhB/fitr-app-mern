@@ -4,6 +4,12 @@ const express = require('express');
 //Express App
 const app = express();
 
+//MiddleWare
+app.use((req,res,next)=>{
+    console.log(req.path, req.method);
+    next()
+})
+
 //Routes
 app.get('/',(req,res)=>{
      res.json({message:'Welcome to FitR'});
