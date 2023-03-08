@@ -16,7 +16,7 @@ const Home = ()=>{
             }
         }
         fetchWorkouts();
-    },[]);
+    },[dispatch]);
     useState();
     return(
         <div className="home">
